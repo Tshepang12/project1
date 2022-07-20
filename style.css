@@ -1,0 +1,123 @@
+@import url('(https://fonts.googleapis.com/css?family=Josefin+Sans:200,400,600&display=swap)');
+*{
+    box-sizing: border-box
+}
+body{
+    background-image: url('./images/bg-pattern-desktop\ \(4\).svg');
+    background-size: contain;
+    font-family: 'josefin sans' ,sans-serif;
+    margin: 0;
+
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+    margin-right: -200px;
+}
+
+.left{
+    padding: 0 40px;
+    width: 60%;
+    margin-left: -60px;
+}
+
+.inner-container{
+    max-width: 650px;
+ }
+
+.right{
+    width: 100px;
+    margin-bottom: 2px;
+    padding-right: 900px;
+}
+
+.logo{
+    margin:60px 0;
+    width: 200px;
+}
+
+h1{
+    color: hsl(0, 6%, 24%);
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 0;
+    letter-spacing: 10px;
+}
+
+h1 span{
+    color: hsl(0, 36%, 70%);
+    font-weight: 200;
+}
+
+p{
+    color: hsl(0, 36%, 70%);
+    line-height: 26px;
+    margin: 30px 0;
+    
+}
+    
+form{
+    position: relative;
+    width: 430px;
+}
+
+input{
+    background-color: transparent;
+    border: 2px solid hsl(0, 93%, 68%);
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 16px;
+    height: 55px;
+    width: 100%;
+    margin-left: 0;
+    bottom: 10px;
+    
+}
+
+input:focus{
+    outline:none ;
+}
+
+form.error input{
+    border: 1px solid hsl(0, 93%, 68%);
+}
+
+button{
+    background-image: linear-gradient(135deg,hsl(0,80%,86%),hsl(0,74%,74%));
+    box-shadow: 2px 5px 10px hsla(0, 36%, 70%, 0.5);
+    border: none;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: opacity 0.2s ease;
+    height: 55px;
+    padding: 15px;
+    width: 100px;
+}
+
+.error-icon{
+    position: absolute;
+    top: 15px;
+    right: 110px;
+}
+
+form.error .error-icon{
+    display: block;
+}
+
+small{
+    color: hsl(0, 93%, 68%);
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+form.error small{
+    display: block;
+}
+
+.container{
+    padding-left: 300px;
+}
